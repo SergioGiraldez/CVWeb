@@ -1,0 +1,7 @@
+#prfl_pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  max-width: 350px;
+}
