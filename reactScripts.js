@@ -1,7 +1,7 @@
 const e = React.createElement;
 
 function Button(props){
-  return e('button',{onClick:props.handleClick,id: props.name},null)
+  return e('button',{onClick:props.handleClick,id: props.name},props.txt)
 }
 
 function MainPanel(props){
@@ -55,9 +55,9 @@ class ContentManager extends React.Component {
       return e(
         'div',{id: 'container'},e(
           'div',{id: 'button_container'},
-            e(Button,{handleClick:this.changeToMyself,name:'myselfbtn'},null),
-            e(Button,{handleClick:this.changeToMystudies,name:'studiesbtn'},null),
-            e(Button,{handleClick:this.changeToMycareer,name:'careerbtn'},null)),
+            e(Button,{handleClick:this.changeToMyself,name:'myselfbtn',txt:'MY SELF'},null),
+            e(Button,{handleClick:this.changeToMystudies,name:'studiesbtn',txt:'STUDIES'},null),
+            e(Button,{handleClick:this.changeToMycareer,name:'careerbtn',txt:'CAREER'},null)),
           e('div',{id: 'info_container'},e(MainPanel,{name:this.state.value},null))
       );
   }
