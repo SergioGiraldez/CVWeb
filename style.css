@@ -1,5 +1,8 @@
 html{
   height: 100%;
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  font-family: 'Titillium Web', sans-serif;
 }
 body{
   margin:4vh 0 0 0;
@@ -9,11 +12,27 @@ body{
   height: cover;
 }
 
+.container_title {
+	color:#99ffff;
+}
+
+#img_container {
+  border-radius: 1vw;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  margin: auto;
+  width: 80%;
+  max-width: 750px;
+  background: url(background2.jpg) no-repeat;
+  background-size: cover;
+  padding:40px 0 5px 0;
+}
+
 #prfl_pic {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 25%;
   max-width: 350px;
 }
 #container {
@@ -33,8 +52,8 @@ body{
 #info_container {
 	margin-bottom:15px;
 	border-radius: 1vw;
-	border: solid 1px #ccffef;
-	background-color: #e6fff7;
+	background-color: #393946;
+	color: white;
 	width: 100%;
 	height: 100%;
 }
@@ -42,22 +61,22 @@ body{
 #button_container button {
   border-radius: 50%;
   padding: calc(35px + 1.5vw) calc(35px + 1.5vw);
-  margin: 2.5vw;
+  margin: 2vh 5vw;
 }
 #myselfbtn {
-  background: url(myselfbtn.jpg) no-repeat;
+  background: url(myselfbtn.png) no-repeat;
   background-size: cover;
   border: 0;
 }
 
 #studiesbtn {
-  background: url(studiesbtn.jpg) no-repeat;
+  background: url(studiesbtn.png) no-repeat;
   background-size: cover;
   border: 0;
 }
 
 #careerbtn {
-  background: url(careerbtn.jpg) no-repeat;
+  background: url(careerbtn.png) no-repeat;
   background-size: cover;
   border: 0;
 }
