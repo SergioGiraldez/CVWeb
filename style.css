@@ -46,36 +46,65 @@ body{
 }
 
 .info_subcontainer {
-	padding: 1vh calc(5px + 1vw);
+	padding: 1vh calc(5px + 1vw) 1vh calc(5px + 1vw);
 }
 
 #info_container {
 	margin-bottom:15px;
 	border-bottom-left-radius: 2vw;
 	border-bottom-right-radius: 2vw;
-	background-color: #393946;
 	color: white;
 	width: 100%;
 	height: 100%;
-	background-color: #393946;
+	background-color: #505062;
 }
 
 #button_container button {
 	background-color: #393946;
 	color: white;
-	width:33%;
+	width:33.3%;
 	padding: 3vh 3%;
 }
+
+#button_container button:focus {
+	outline: 0;
+}
+
 #myselfbtn {
+	border-top-left-radius: 1vw;
+	border-top-right-radius: 1vw;
+	font-family: 'Titillium Web', sans-serif;
 	border: 0;
-	border-right: thick solid #99ffff;
 }
 
 #studiesbtn {
+	border-top-left-radius: 1vw;
+	border-top-right-radius: 1vw;
+	font-family: 'Titillium Web', sans-serif;
 	border: 0;
 }
 
 #careerbtn {
+	border-top-left-radius: 1vw;
+	border-top-right-radius: 1vw;
+	font-family: 'Titillium Web', sans-serif;
 	border: 0;
+}
+#button_container div{
+	display:inline;
+}
+.self #myselfbtn{
+	background-color: #505062;
+	border-right: thick solid #99ffff;
+}
+
+.studies #studiesbtn{
+	background-color: #505062;	
+	border-right: thick solid #99ffff;
+	border-left: thick solid #99ffff;
+}
+
+.career #careerbtn{
+	background-color: #505062;	
 	border-left: thick solid #99ffff;
 }
