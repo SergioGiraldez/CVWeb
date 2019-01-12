@@ -1,6 +1,7 @@
 html{
 	height: 100%;
-	background: url(background.jpg) no-repeat;
+	/*background: url(background.jpg) no-repeat;*/
+	background-color: #e6ffff;
 	background-size: cover;
 	font-family: 'Titillium Web', sans-serif;
 }
@@ -21,7 +22,7 @@ body{
 	border-top-right-radius: 2vw;
 	margin: auto;
 	width: 80%;
-	max-width: 750px;
+	max-width: 800px;
 	background: url(background2.jpg) no-repeat;
 	background-size: cover;
 	padding:40px 0 5px 0;
@@ -37,7 +38,7 @@ body{
 #container {
 	margin: auto;
 	width: 80%;
-	max-width: 750px;
+	max-width: 800px;
 	height: 100%;
 }
 #button_container {
@@ -71,7 +72,6 @@ body{
 }
 
 #myselfbtn {
-	border-top-left-radius: 1vw;
 	border-top-right-radius: 1vw;
 	font-family: 'Titillium Web', sans-serif;
 	border: 0;
@@ -86,7 +86,6 @@ body{
 
 #careerbtn {
 	border-top-left-radius: 1vw;
-	border-top-right-radius: 1vw;
 	font-family: 'Titillium Web', sans-serif;
 	border: 0;
 }
@@ -99,12 +98,20 @@ body{
 }
 
 .studies #studiesbtn{
-	background-color: #505062;	
+	background-color: #505062;
 	border-right: thick solid #99ffff;
 	border-left: thick solid #99ffff;
 }
 
 .career #careerbtn{
-	background-color: #505062;	
+	background-color: #505062;
 	border-left: thick solid #99ffff;
+}
+.inner_paragraph {
+	margin: 1vh calc(5px + 1vw);
+}
+.text_inbox {
+	margin: calc(5px + 1vh) 0;
+	padding: 1vh calc(5px + 1vw);
+	background-color: #393946;
 }
