@@ -1,0 +1,26 @@
+{
+  "name": "cvweb",
+  "version": "1.0.0",
+  "description": "My CV using HTML5 CSS3 REACT",
+  "main": "reactScripts.js",
+  "scripts": {
+    "babel": "babel --presets es2015 js/reactScripts.js -o build/main.bundle.js",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioGiraldez/CVWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergioGiraldez/CVWeb/issues"
+  },
+  "homepage": "https://github.com/SergioGiraldez/CVWeb#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "http-server": "^0.11.1"
+  }
+}

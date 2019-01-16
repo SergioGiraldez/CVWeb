@@ -23,7 +23,7 @@ body{
 	margin: auto;
 	width: 80%;
 	max-width: 800px;
-	background: url(background2.jpg) no-repeat;
+	background: url(img/background2.jpg) no-repeat;
 	background-size: cover;
 	padding:40px 0 5px 0;
 }
