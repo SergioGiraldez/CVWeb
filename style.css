@@ -65,6 +65,7 @@ body{
 	color: white;
 	width:33.3%;
 	padding: 3vh 3%;
+	font-size: 1.7vh
 }
 
 #button_container button:focus {
@@ -114,4 +115,10 @@ body{
 	margin: calc(5px + 1vh) 0;
 	padding: 1vh calc(5px + 1vw);
 	background-color: #393946;
+}
+.skill_subcontainer {
+	background: linear-gradient(top, red, red 80%, transparent 10%, transparent 100%),
+							linear-gradient(left, red, red 40%, transparent 10%, transparent 100%);
+	background: -webkit-linear-gradient(to bottom, red, red 80%, transparent 10%, transparent 100%),
+							-webkit-linear-gradient(to right, red, red 40%, transparent 10%, transparent 100%);
 }
