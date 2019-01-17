@@ -4,7 +4,7 @@
   "description": "My CV using HTML5 CSS3 REACT",
   "main": "reactScripts.js",
   "scripts": {
-    "babel": "babel --presets es2015 js/reactScripts.js -o build/index2.js",
+    "babel": "babel --presets es2015 js/reactScripts.js -o build/index.js",
     "start": "http-server"
   },
   "repository": {

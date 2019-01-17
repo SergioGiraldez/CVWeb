@@ -12,7 +12,7 @@ function SkillBar(props){
 
 function SkillsPanel(){
   return e('div',{id:'skills_container'},
-    e('h2',{className: 'container_title_h2'},'Technical Skils'),
+    e('h2',{className: 'container_title_h2'},'Technical Skills'),
     e(SkillBar,{container_id: 'pythonbar'},null),
     e(SkillBar,{container_id: 'javabar'},null),
     e(SkillBar,{container_id: 'javascriptbar'},null),
@@ -34,7 +34,7 @@ function MainPanel(props){
       // MYSELF panel text
       return e('div',{className: 'info_subcontainer',id:'self_selected'},
 				e('h1',{className: 'container_title'},'MYSELF'),
-				e('div',{className: 'text_inbox'},e('p',{},'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.')),
+				e('div',{className: 'text_inbox'},e('p',{},'Hi! My name is Sergio Giraldez from Barcelona. I am a pasionate software developer aiming to put my skills to test. I love challenge and learning, I made this Web Curriculum to improve my React, html5 & css3 habilities.')),
         e(SkillsPanel,{},null)
 				);
     case 'studies':
@@ -81,7 +81,7 @@ class ContentManager extends React.Component {
       return e(
         'div',{id: 'container'},e(
           'div',{id: 'button_container'},
-            e(Button,{handleClick:this.changeToMyself,name:'myselfbtn',txt:'MY SELF',clas:this.state.value},null),
+            e(Button,{handleClick:this.changeToMyself,name:'myselfbtn',txt:'MYSELF',clas:this.state.value},null),
             e(Button,{handleClick:this.changeToMystudies,name:'studiesbtn',txt:'STUDIES',clas:this.state.value},null),
             e(Button,{handleClick:this.changeToMycareer,name:'careerbtn',txt:'CAREER',clas:this.state.value},null)),
           e('div',{id: 'info_container'},e(MainPanel,{name:this.state.value},null))
