@@ -14,11 +14,19 @@ function Button(props) {
   return e('div', { className: props.clas }, e('button', { onClick: props.handleClick, id: props.name }, props.txt));
 }
 
+function SkillBar(props) {
+  return e('div', { className: 'skill_subcontainer' }, e('img', { style: { width: '100%' }, className: 'bar_image', src: 'img/' + props.container_id + '.png' }, null));
+}
+
+function SkillsPanel() {
+  return e('div', { id: 'skills_container' }, e('h2', { className: 'container_title_h2' }, 'Technical Skils'), e(SkillBar, { container_id: 'pythonbar' }, null), e(SkillBar, { container_id: 'javabar' }, null), e(SkillBar, { container_id: 'javascriptbar' }, null), e(SkillBar, { container_id: 'reactbar' }, null), e(SkillBar, { container_id: 'html5bar' }, null), e(SkillBar, { container_id: 'css3bar' }, null), e(SkillBar, { container_id: 'mysqlbar' }, null), e('h2', { className: 'container_title_h2' }, 'Languages'), e(SkillBar, { container_id: 'englishbar' }, null), e(SkillBar, { container_id: 'spanishbar' }, null), e(SkillBar, { container_id: 'catalanbar' }, null));
+}
+
 function MainPanel(props) {
   switch (props.name) {
     case 'self':
       // MYSELF panel text
-      return e('div', { className: 'info_subcontainer', id: 'self_selected' }, e('h1', { className: 'container_title' }, 'MYSELF'), e('div', { className: 'text_inbox' }, e('p', {}, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.')), e('p', { className: 'inner_paragraph' }, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'));
+      return e('div', { className: 'info_subcontainer', id: 'self_selected' }, e('h1', { className: 'container_title' }, 'MYSELF'), e('div', { className: 'text_inbox' }, e('p', {}, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.')), e(SkillsPanel, {}, null));
     case 'studies':
       return e('div', { className: 'info_subcontainer', id: 'studies_selected' }, e('h1', { className: 'container_title' }, 'MY STUDIES'), e('p', {}, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'));
     case 'career':
