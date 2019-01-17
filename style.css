@@ -118,8 +118,11 @@ body{
 	border: 1px solid #22222a;
 }
 .skill_subcontainer {
-	background: linear-gradient(top, red, red 80%, transparent 10%, transparent 100%),
-							linear-gradient(left, red, red 40%, transparent 10%, transparent 100%);
-	background: -webkit-linear-gradient(to bottom, red, red 80%, transparent 10%, transparent 100%),
-							-webkit-linear-gradient(to right, red, red 40%, transparent 10%, transparent 100%);
+	background-image: linear-gradient(to right, red, yellow, green);
+	background-image: -webkit-linear-gradient(to right, red, yellow, green);
+}
+.bar_image{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
 }

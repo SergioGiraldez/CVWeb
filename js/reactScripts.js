@@ -6,13 +6,13 @@ function Button(props){
 
 function SkillBar(props){
   return e('div',{className: 'skill_subcontainer'},
-    e('img',{style: {width:'100%'}, className: 'bar_image', src:'img/'+props.container_id+'.png'},null));
+    e('img',{className: 'bar_image', src:'img/'+props.container_id+'.png'},null));
 }
 
 
 function SkillsPanel(){
   return e('div',{id:'skills_container'},
-    e('h2',{className: 'container_title_h2'},'Technical Skills'),
+    e('h2',{className: 'container_title_h2'},'Programming Languages'),
     e(SkillBar,{container_id: 'pythonbar'},null),
     e(SkillBar,{container_id: 'javabar'},null),
     e(SkillBar,{container_id: 'javascriptbar'},null),
@@ -20,7 +20,7 @@ function SkillsPanel(){
     e(SkillBar,{container_id: 'html5bar'},null),
     e(SkillBar,{container_id: 'css3bar'},null),
     e(SkillBar,{container_id: 'mysqlbar'},null),
-    e('h2',{className: 'container_title_h2'},'Languages'),
+    e('h2',{className: 'container_title_h2'},'Spoken Languages'),
     e(SkillBar,{container_id: 'englishbar'},null),
     e(SkillBar,{container_id: 'spanishbar'},null),
     e(SkillBar,{container_id: 'catalanbar'},null)
