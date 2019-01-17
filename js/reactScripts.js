@@ -34,7 +34,7 @@ function MainPanel(props){
       // MYSELF panel text
       return e('div',{className: 'info_subcontainer',id:'self_selected'},
 				e('h1',{className: 'container_title'},'MYSELF'),
-				e('div',{className: 'text_inbox'},e('p',{},'Hi! My name is Sergio Giraldez from Barcelona. I am a pasionate software developer aiming to put my skills to test. I love challenge and learning, I made this Web Curriculum to improve my React, html5 & css3 habilities.')),
+				e('div',{className: 'text_inbox'},e('p',{},'Hi! My name is Sergio Giraldez from Barcelona. I am a passionate software developer aiming to put my skills to test. I love challenge and learning, I made this Web Curriculum to improve my React, html5 & css3 abilities.')),
         e(SkillsPanel,{},null)
 				);
     case 'studies':
