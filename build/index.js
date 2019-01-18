@@ -26,7 +26,7 @@ function MainPanel(props) {
   switch (props.name) {
     case 'self':
       // MYSELF panel text
-      return e('div', { className: 'info_subcontainer', id: 'self_selected' }, e('h1', { className: 'container_title' }, 'HTML5'), e('div', { className: 'text_inbox' }, e('p', {}, 'Hi! My name is Sergio Giraldez from Barcelona. I am a passionate software developer aiming to put my skills to test. I love challenge and learning, I made this Web Curriculum to improve my React, html5 & css3 abilities.')), e(SkillsPanel, {}, null));
+      return e('div', { className: 'info_subcontainer', id: 'self_selected' }, e('h1', { className: 'container_title' }, 'MYSELF'), e('div', { className: 'text_inbox' }, e('p', {}, 'Hi! My name is Sergio Giraldez from Barcelona. I am a passionate software developer aiming to put my skills to test. I love challenge and learning, I made this Web Curriculum to improve my React, html5 & css3 abilities.')), e(SkillsPanel, {}, null));
     case 'studies':
       return e('div', { className: 'info_subcontainer', id: 'studies_selected' }, e('h1', { className: 'container_title' }, 'MY STUDIES'), e('p', {}, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'));
     case 'career':
