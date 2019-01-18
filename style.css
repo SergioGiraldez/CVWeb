@@ -65,7 +65,7 @@ body{
 	color: white;
 	width:33.3%;
 	padding: 3vh 3%;
-	font-size: 1.7vh
+	font-size: calc(5px 0.7vh + 0.7vw);
 }
 
 #button_container button:focus {
